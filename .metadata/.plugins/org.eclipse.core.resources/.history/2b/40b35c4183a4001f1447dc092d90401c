@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Custom Styles (Optional) -->
+    <link rel="stylesheet" href="topnav.css" th:href="@{/css/topnav.css}" />
+    <link rel="stylesheet" href="Sidenavbar.css" th:href="@{/css/Sidenavbar.css}" />
+</head>
+<body>
+    <!-- Importing NavBar -->
+    <div th:insert="TopNav.html::topnav"></div>
+
+    <!-- Main Content with Sidebar and Right Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar Section (Responsive) -->
+            <div class="col-md-3 col-12">
+                <div th:insert="Sidenavbar.html::Sidenav"></div>
+            </div>
+
+            <!-- Main Content Section -->
+            <div class="col-md-9 col-12">
+                <h4 style="font-weight:bold">Home</h4>
+                <h2 class="text-center py-5">Welcome to UpwardIQ</h2>
+                <h3 class="text-center">Bulk Upload Product Data Application</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3 mt-4">
+        <p>&copy; 2024 Product Management System. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS (Optional for interactive features like dropdowns) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
