@@ -33,6 +33,11 @@ public class ProductController {
 
    @Autowired
    private ProductService productService;
+
+   @GetMapping("/")
+   public String getIndex() {
+	   return "index";
+   }
 	@GetMapping("/getUploadProductPage")
     public String getUploadPage() {
         return "uploadFile";
