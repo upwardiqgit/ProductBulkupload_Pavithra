@@ -7,10 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ProductBulkUploadApplication {
 
 	public static void main(String[] args) {
-		System.out.println("hello");
-		System.out.println("hello");
-		System.out.println("hello");
-		System.out.println("hello");
 		SpringApplication.run(ProductBulkUploadApplication.class, args);
 	}
 

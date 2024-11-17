@@ -9,9 +9,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class Product {
 
 	@Id
@@ -21,5 +18,46 @@ public class Product {
 	private String productname;
 	private String producttype;
 	private String productprice;
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public long getProductid() {
+		return productid;
+	}
+	public void setProductid(long productid) {
+		this.productid = productid;
+	}
+	public String getProductname() {
+		return productname;
+	}
+	public void setProductname(String productname) {
+		this.productname = productname;
+	}
+	public String getProducttype() {
+		return producttype;
+	}
+	public void setProducttype(String producttype) {
+		this.producttype = producttype;
+	}
+	public String getProductprice() {
+		return productprice;
+	}
+	public void setProductprice(String productprice) {
+		this.productprice = productprice;
+	}
+	public Product(long id, long productid, String productname, String producttype, String productprice) {
+		super();
+		this.id = id;
+		this.productid = productid;
+		this.productname = productname;
+		this.producttype = producttype;
+		this.productprice = productprice;
+	}
+	public Product() {
+		
+	}
 	
 }
