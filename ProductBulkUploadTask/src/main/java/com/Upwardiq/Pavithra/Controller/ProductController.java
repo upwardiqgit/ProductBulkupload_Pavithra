@@ -40,7 +40,11 @@ public class ProductController {
    }
 	@GetMapping("/getUploadProductPage")
     public String getUploadPage() {
-        return "uploadFile";
+        return "Uploadfile";
+    }
+    @GetMapping("/searchpage")
+    public String search() {
+        return "Searchpage";
     }
 
 	@GetMapping("/getSerchpage")
